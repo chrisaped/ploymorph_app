@@ -1,0 +1,6 @@
+h1 New Article
+= simple_form_for @article do |f|
+	= f.input :title
+	= f.input :author
+	= f.input :content, as: :text
+	= f.submit

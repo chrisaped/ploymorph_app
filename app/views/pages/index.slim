@@ -1,0 +1,11 @@
+h1 Articles & Events App
+
+h2 Articles
+a href=new_article_path New Article
+ul 
+ - @articles.each do |article|
+	li
+	  a href=article_path(article) =article.title
+
+
+
