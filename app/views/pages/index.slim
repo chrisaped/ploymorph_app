@@ -7,5 +7,9 @@ ul
 	li
 	  a href=article_path(article) =article.title
 
-
-
+h2 Events
+a href = new_event_path New Event
+ul
+	- @events.each do |event|
+		li
+			a href = event_path(event) = event.name
